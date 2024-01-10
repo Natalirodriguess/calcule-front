@@ -2,7 +2,34 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: #FFEFFA;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.calculadora{
+  background-color: #FF8F8F;
+  width: 25vw;
+  height: 80vh;
+  position: fixed;
+  display: flex;
+  border-radius: 30px
+}
+
+.tela-calculadora{
+  background-color: #F1F1F1;
+  width: 80%;
+  height: 15%;
+  border-radius: 30px;
+  margin-left: 10%;
+}
+
+@media (max-width: 700px) {
+  .calculadora {
+    width: 60%; /* Ajuste conforme necessário para telas menores */
+    padding-top: 5%; /* Mantém a proporção 1:1 */
+  }
 }
