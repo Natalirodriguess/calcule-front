@@ -14,9 +14,9 @@
   background-color: #FF8F8F;
   width: 25vw;
   height: 80vh;
-  position: fixed;
   display: flex;
-  border-radius: 30px
+  flex-direction: column;
+  border-radius: 30px;
 }
 
 .tela-calculadora{
@@ -25,11 +25,55 @@
   height: 15%;
   border-radius: 30px;
   margin-left: 10%;
+  margin-top: 10%;
 }
 
-@media (max-width: 700px) {
+.botoes-conjunto{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center
+}
+
+
+.botao{
+  background-color: #F1F1F1;
+  color: #000;
+  width: 15%;
+  height: 200%;
+  border-radius: 20px;
+  margin: 5px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px) {
   .calculadora {
     width: 60%; /* Ajuste conforme necessário para telas menores */
-    padding-top: 5%; /* Mantém a proporção 1:1 */
+    padding-top: 0%; /* Mantém a proporção 1:1 */
   }
 }
