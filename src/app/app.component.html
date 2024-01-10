@@ -1,5 +1,23 @@
 <div class="aplicacao">
   <div class="container">
-    <button>botao</button>
+    <div class="tela-display"></div>
+    <div class="caixa-de-botoes">
+      <span>{{operadorUm}}</span>
+      <span>{{operador}}</span>
+      <span>{{operadorDois}}</span>
+      <button class="botoes" (click)="buttonNumberClick(1)">1</button>
+      <button (click)="buttonNumberClick(2)">2</button>
+      <button (click)="buttonNumberClick(3)">3</button>
+      <button (click)="buttonNumberClick(4)">4</button>
+      <button (click)="buttonNumberClick(5)">5</button>
+      <button (click)="buttonNumberClick(6)">6</button>
+      <button (click)="buttonNumberClick(7)">7</button>
+      <button (click)="buttonNumberClick(8)">8</button>
+      <button (click)="buttonNumberClick(9)">9</button>
+      <button (click)="buttonOperadorClick('+')">+</button>
+      <button (click)="buttonOperadorClick('-')">-</button>
+      <button (click)="buttonOperadorClick('x')">x</button>
+      <button (click)="buttonOperadorClick('/')">/</button>
+    </div>
   </div>
 </div>
